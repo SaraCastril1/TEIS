@@ -1,0 +1,74 @@
+$primary-color: rgba(140, 43, 231, 1);
+$secondary-color: rgba(61, 1, 245, 1);
+$text-btn-color: white;
+$hover-color: rgb(153, 47, 252);
+$box-shadow-color: rgba(192, 203, 251, 0.7);
+$box-shadow-principal: rgba(0,0,0, 0.2);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+    > form{
+        box-shadow: 0 0 20px $box-shadow-principal;
+        padding: 3%;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .input-wrapper{
+            position: relative;
+            margin: 1rem;
+
+            > input{
+                padding: 0.8rem;
+                border-radius: 25px;
+                box-shadow: 0 0 20px $box-shadow-color;
+                border: 0;
+                outline: none;
+                padding-left: 2.2rem;
+
+            }
+
+            .input-icon{
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                margin: 0.5rem;
+
+                
+            }
+        }
+
+       > .btn{
+            padding: 10px;
+            margin-top:1rem ;
+            border-radius: 25px;
+            box-shadow: 0 0 20px $box-shadow-color;
+            background: linear-gradient(
+                90deg,
+                $primary-color 25%,
+                $secondary-color 100%
+            );
+            border: none;
+            box-shadow: 0 0 20px $box-shadow-color;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover{
+                background: $hover-color;
+            }
+ 
+
+       } 
+
+    
+    }
+}
+
